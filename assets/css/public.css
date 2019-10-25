@@ -4,7 +4,8 @@
 	color: #FFFFFF;
 }
 
-.cn-slick-carousel-section-group h3 {
+.cn-slick-carousel-section-group h3,
+.cn-slick-carousel-section-group p {
 	color: #FFFFFF;
 }
 
