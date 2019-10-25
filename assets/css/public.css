@@ -1,0 +1,68 @@
+.cn-slick-carousel-section-group {
+	background: #000000;
+	box-sizing: border-box;
+	color: #FFFFFF;
+}
+
+.cn-slick-carousel-section-group h3 {
+	color: #FFFFFF;
+}
+
+/*  SECTIONS  */
+.cn-slick-carousel-section {
+	/*background: #000000;*/
+	/*box-sizing: border-box;*/
+	/*color: #FFFFFF;*/
+	clear: both;
+	padding: 20px 40px;
+	margin: 0;
+}
+
+.cn-slick-carousel-section h3 {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+/*  COLUMN SETUP  */
+.cn-slick-carousel-section-column {
+	display: inline-block;
+	/*float: left;*/
+	padding: 1% 0 1% 20px;
+	vertical-align: top;
+}
+
+.cn-slick-carousel-section-column:first-child {
+	padding-left: 0;
+}
+
+/*  GROUPING  */
+.cn-slick-carousel-section-group:before,
+.cn-slick-carousel-section-group:after {
+	content: "";
+	display: table;
+}
+
+.cn-slick-carousel-section-group:after {
+	clear: both;
+}
+
+/*  GRID OF TWO  */
+.cn-slick-carousel-section-column-span-two {
+	width: 100%;
+}
+
+.cn-slick-carousel-section-column {
+	width: 50%;
+}
+
+@media only screen and (max-width: 480px) {
+	.cn-slick-carousel-section-column {
+		margin: 1% 0 1% 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.cn-slick-carousel-section-column-span-two, .cn-slick-carousel-section-column {
+		width: 100%;
+	}
+}
