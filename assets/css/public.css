@@ -1,3 +1,7 @@
+.cn-slick-carousel-section-group .slick-slide {
+	margin: 0 20px
+}
+
 .cn-slick-carousel-section-group {
 	background: #000000;
 	box-sizing: border-box;
@@ -11,9 +15,7 @@
 
 /*  SECTIONS  */
 .cn-slick-carousel-section {
-	/*background: #000000;*/
-	/*box-sizing: border-box;*/
-	/*color: #FFFFFF;*/
+	box-sizing: border-box;
 	clear: both;
 	padding: 20px 40px;
 	margin: 0;
@@ -27,13 +29,13 @@
 /*  COLUMN SETUP  */
 .cn-slick-carousel-section-column {
 	display: inline-block;
-	/*float: left;*/
-	padding: 1% 0 1% 20px;
+	padding: 1% 20px 1% 0;
 	vertical-align: top;
 }
 
-.cn-slick-carousel-section-column:first-child {
+.cn-slick-carousel-section-column:first-of-type {
 	padding-left: 0;
+	width: 33%;
 }
 
 /*  GROUPING  */
@@ -53,12 +55,16 @@
 }
 
 .cn-slick-carousel-section-column {
-	width: 50%;
+	width: 66%;
 }
 
 @media only screen and (max-width: 480px) {
 	.cn-slick-carousel-section-column {
 		margin: 1% 0 1% 0;
+	}
+
+	.cn-slick-carousel-section-column:first-of-type {
+		width: 100%;
 	}
 }
 
