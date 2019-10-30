@@ -11,6 +11,7 @@
 .cn-slick-carousel-section-group h3,
 .cn-slick-carousel-section-group p {
 	color: #FFFFFF;
+	font-size: x-large;
 }
 
 /*  SECTIONS  */
@@ -28,6 +29,7 @@
 
 /*  COLUMN SETUP  */
 .cn-slick-carousel-section-column {
+	box-sizing: border-box;
 	display: inline-block;
 	padding: 1% 20px 1% 0;
 	vertical-align: top;
