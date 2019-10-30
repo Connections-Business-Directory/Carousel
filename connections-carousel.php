@@ -216,6 +216,7 @@ if ( ! class_exists( 'Connections_Directory_Carousel' ) ) :
 			$defaults = array(
 				'category' => NULL,
 				'limit'    => 100,
+				'speed'    => 5000,
 			);
 
 			$atts = shortcode_atts( $defaults, $atts );
@@ -271,7 +272,7 @@ if ( ! class_exists( 'Connections_Directory_Carousel' ) ) :
 			$containerOpen  = '<div class="cn-slick-carousel-section cn-slick-carousel-section-group">';
 			$containerClose = '</div>';
 
-			$sliderOpen  = '<div class="cn-slick-carousel" data-slick=\'{"autoplay": true, "autoplaySpeed": 5000, "infinite": true}\'>';
+			$sliderOpen  = '<div class="cn-slick-carousel" data-slick=\'{"autoplay": true, "autoplaySpeed": ' . absint( $atts['speed'] )  . ', "infinite": true}\'>';
 			$SliderClose = '</div>';
 
 			return $containerOpen . $sliderOpen . $html . $SliderClose . $containerClose;
